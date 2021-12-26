@@ -43,10 +43,12 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="首   选：" FontSize="14" VerticalAlignment="Center" />
         <ComboBox x:Name="ComboBox_OpenMode" Grid.Column="2" Grid.Row="1" FontSize="14" SelectedIndex="{Binding Path=OpenMode,Mode=TwoWay}">
-            <ComboBoxItem Content="使用默认设置"/>
-            <ComboBoxItem Content="使用选项卡打开"/>
-            <ComboBoxItem Content="使用选项卡(后台)打开"/>
-            <ComboBoxItem Content="使用外部打开"/>
+         <ComboBoxItem Content="Use default settings"/>
+            <ComboBoxItem Content="Use tab to open"/>
+            <ComboBoxItem Content="Use the tab (background) to open"/>
+            <ComboBoxItem Content="Use external opening"/>
+
+
         </ComboBox>
         <TextBlock Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" Text="分辨率：" VerticalAlignment="Center" FontSize="14" />
         <ComboBox x:Name="ComboBox_DeskTopSize" Grid.Column="2" Grid.Row="3" FontSize="14" SelectedIndex="{Binding Path=SizeIndex,Mode=TwoWay}">
